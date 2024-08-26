@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <title>Divyansh Portfolio</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check" name="" value="" onclick="margin_check()">
+    <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+    <label class="logo">Divya Develop</label>
+    <ul id="hamburger">
+      <li><label for="check"><a id="home_anchor" class="active" href="#">Home</a></label></li>
+      <li><label for="check"><a id="anchor" href="#AboutMe">About Me</a></label></li>
+      <li><label for="check"><a id="anchor" href="#Projects">Projects</a></label></li>
+      <li><label for="check"><a id="anchor" href="#Testimonials">Testimonials</a></label></li>
+      <li><label for="check"><a id="anchor" href="#Contact">Contact</a></label></li>
+    </ul>
+  </nav>
+
+  <br>
+  <section id="introduction">
+    <h1 class="divya_h1">DIVYA</h1>
+    <div class="image-carousel">
+      <img src="img1.jpg" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+      <img src="img4.jpg" alt="Image 4">
+      <img src="img5.jpg" alt="Image 5">
+      <img src="img6.jpg" alt="Image 6">
+    </div>
+    <button class="prev-button">&#8592;</button>
+    <button class="next-button">&#8594;</button>
+    <br id="br">
+    <h1 class="divya_h2">DEVELOP</h1>
+    <p class="divya_p">I turn website ideas into pixel-perfect
+      <br id="divya_p_br">realities. Let's make magic together!</p>
+  </section>
+
+  <!-- About me -->
+  <section id="AboutMe">
+    <h1 id="about_h1">About Me</h1>
+    <img src="logo1.jpg" id="logo_img"><br>
+    <p id="about_p">Hello! I'm Divyansh, a web developer from India. I specialize in creating responsive,
+      user-friendly websites using HTML, CSS, JavaScript, Python, MySQL, Firebase, and PHP. I have a strong focus on
+      helping smaller private companies enhance their online presence with modern, functional websites.
+    </p>
+  </section>
+
+  <section id="Projects">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+
+
+        <div class="item active">
+          <h1 id="projects_h">Projects</h1>
+          <center>
+            <img src="pl3.jpg" class="img-responsive" id="divya_image" onclick="OpenFile()">
+            <p id="projects_img_p">Divya Image International</p>
+          </center>
+        </div>
+
+        <div class="item">
+          <h1 id="projects_h">Projects</h1>
+          <center>
+            <img src="logo1.jpg" class="img-responsive" onclick="OpenFile1()">
+            <p id="projects_img_p">Divya Develop</p>
+          </center>
+        </div>
+
+
+
+
+
+          
+        <div class="item">
+          <h1 id="projects_h">Projects</h1>
+          <center>
+            <img src="AP.jpg" class="img-responsive">
+            <p id="projects_img_p">Projects in one frame</p>
+          </center>
+
+          </div>
+
+          <div class="item">
+            <h1 id="projects_h">Projects</h1>
+            <center>
+              <img src="AP2.jpg" class="img-responsive">
+              <p id="projects_img_p">Projects in one frame</p>
+            </center>
+  
+            </div>
+
+
+
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+  </section>
+
+  <section id="Testimonials">
+    <h1 id="Testimonials_h">Testimonials</h1>
+    <div id="test_div">
+      <p id="test_p">Working with Divya Develop was a game-changer for our business. Their expertise in web development
+        transformed our outdated site into a modern, user-friendly platform. Not only did they deliver on time, but
+        their attention to detail and creative solutions exceeded our expectations. Highly recommend!</p>
+      <h3 id="test_h3">~Sarah Johnson, Marketing Director</h3>
+    </div>
+    <div id="test2_div">
+      <p id="test2_p">I can't thank Divya Develop enough for their outstanding work on our e-commerce site. They
+        provided invaluable insights and implemented features that have significantly boosted our sales. Their technical
+        skills combined with their understanding of user experience make them a true asset to any project.</p>
+      <h3 id="test2_h3">~Rahul Chopra, Business Owner</h3>
+    </div>
+    <div id="test3_div">
+      <p id="test3_p">Divya Develop is an exceptional web developer. They took our vague ideas and turned them into a
+        stunning website that perfectly represents our brand. Their communication throughout the process was fantastic,
+        making it easy to collaborate and ensure our vision was realized. I can’t imagine working with anyone else!</p>
+      <h3 id="test3_h3">~Devilal Gedar, Business Owner</h3>
+    </div>
+  </section>
+
+  <section id="Contact" class="fixed-background">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+      <button type="button" onclick="save()">Send Message</button>
+    </form>
+
+
+    <div id="footer">
+
+      <span>
+        <h3 id="footer_h">Developed by Diva Develop</h3><a href="mailto:divyanshdevelop@gmail.com"><i
+            class="fas fa-envelope"></i></a>
+      </span>
+
+
+
+    </div>
+
+  </section>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
